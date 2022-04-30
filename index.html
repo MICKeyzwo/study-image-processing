@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>study image processing</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div>
+        <input type="file" id="file-input">
+      </div>
+      <div id="image-outlet"></div>
+      <div id="process-btns">
+        <button id="original">元画像</button>
+        <button id="brighter">明度アップ</button>
+        <button id="darker">明度ダウン</button>
+        <button id="gray-scale">グレースケール化</button>
+        <button id="nega-posi">ネガポジ反転</button>
+        <button id="two-colorize">2値化</button>
+        <button id="gausian">ガウシアンフィルタ</button>
+        <button id="diff">微分</button>
+      </div>
+      <div>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
