@@ -28,6 +28,7 @@ input.addEventListener('change', async () => {
     imageOutlet.appendChild(srcImage);
     canvas.width = srcImage.width;
     canvas.height = srcImage.height;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(srcImage, 0, 0);
   }
 });
@@ -37,6 +38,7 @@ $('#original').addEventListener('click', () => {
     return;
   }
   processingImage = srcImage;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(processingImage, 0, 0);
 });
 
